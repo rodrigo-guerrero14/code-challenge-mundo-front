@@ -1,11 +1,13 @@
 import React from "react"
+import Street from "./Street"
 
-const DataList = () => {
+const DataList = (props) => {
+
   return (
     <section className="col-6 mt-4 mx-auto">
       <div className="container">
         <h2>Data List</h2>
-        <table class="table table-hover">
+        <table className="table table-hover">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -13,15 +15,7 @@ const DataList = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-            </tr>
-
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-            </tr>
+            <Street list={props.list}/>
           </tbody>
         </table>
       </div>

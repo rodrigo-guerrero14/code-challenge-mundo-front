@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <Header />
       <DataSettings />
-      <DataList />
+      <DataList list={[]}/>
     </>
   )
 }
