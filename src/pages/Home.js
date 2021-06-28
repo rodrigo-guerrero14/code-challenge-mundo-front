@@ -4,6 +4,7 @@ import DataSettings from "../components/DataSettings"
 import DataList from "../components/DataList"
 
 const Home = () => {
+
   return(
     <>
       <Header />
