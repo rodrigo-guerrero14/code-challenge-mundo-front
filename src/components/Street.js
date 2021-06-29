@@ -6,7 +6,7 @@ const Street = ({list}) => {
   ? (
       list.map((item, index) => {
         return (
-          <tr>
+          <tr key={index}>
             <th scope="row">{index + 1}</th>
             <td>{item}</td>
           </tr>
